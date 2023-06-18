@@ -1,0 +1,111 @@
+.heroContOuter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  user-select: none;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.content {
+  padding: 50px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 10px;
+}
+.heroContInner {
+  display: flex;
+  align-items: center;
+}
+.closed {
+  visibility: hidden;
+}
+.heroText {
+  font-weight: 600;
+  color: var(--heroTextColor);
+}
+.mainHeader {
+  font-size: 34px;
+  line-height: 56px;
+}
+.intro {
+  font-size: 20px;
+  line-height: 36px;
+}
+.paragraph {
+  font-size: 14px;
+  line-height: 26px;
+}
+.connectBTN {
+  font-size: 14px;
+  line-height: 26px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  border-radius: 83px;
+  padding: 5px 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.connectBTN:hover {
+  transform: translate(4px) scale(1.02);
+}
+.imgCont {
+  background-image: url(../../assets/drawing.png);
+  background-size: cover;
+  margin-left: -150px;
+}
+.avatar {
+  width: 100%;
+  transition: 0.7s ease-in-out;
+}
+.avatar:hover {
+  transform: translate(20px, -10px) scale(1.05);
+}
+.moveDown {
+  transform: translateY(450px);
+}
+.frontend {
+  font-size: 26px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.expand {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.rotated {
+  transform: rotate(180deg);
+}
+.expand:hover {
+  scale: 1.2;
+}
+.className {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  user-select: none;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  width: 100%;
+}
+@keyframes wipe-in-left {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+[transition-style="in:wipe:left"] {
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+}

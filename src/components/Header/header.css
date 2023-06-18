@@ -1,0 +1,72 @@
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.logoCont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.siteLogo {
+  scale: 1;
+}
+.siteName {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 45px;
+  color: var(--siteName);
+}
+.siteName:hover {
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contactIco {
+  width: 30px;
+  height: 30px;
+}
+.contactIco:hover {
+  scale: 1.2;
+}
+.routeCont {
+  display: flex;
+  gap: 20px;
+}
+.route {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 45px;
+  color: var(--siteRoute);
+  position: relative;
+}
+.route:hover {
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contactCont {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.routeCont {
+  display: flex;
+  justify-content: center;
+}
+.route::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  transition: width 0.3s ease;
+}
+.route:hover::after {
+  width: 100%;
+}

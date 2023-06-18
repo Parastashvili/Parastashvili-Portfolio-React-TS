@@ -1,0 +1,34 @@
+.skillsCont {
+  padding: 0px 50px;
+  margin: 0px 100px;
+  margin-bottom: 20px;
+}
+.skillText {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: left;
+}
+.skillInner {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 40px;
+  column-gap: 30px;
+}
+.skillInner {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.skillText {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.skillInner :before {
+  content: "o";
+  padding-right: 5px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
