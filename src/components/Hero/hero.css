@@ -48,6 +48,7 @@
   margin-top: 20px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  border-width: 0px;
 }
 .connectBTN:hover {
   transform: translate(4px) scale(1.02);

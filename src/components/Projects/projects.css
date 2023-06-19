@@ -70,6 +70,7 @@
   color: #ffffff;
   margin-top: 20px;
   cursor: pointer;
+  border-width: 0px;
 }
 .buttonCont {
   display: flex;
