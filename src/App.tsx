@@ -1,13 +1,13 @@
 import "./App.css";
+import { useState } from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import Techstack from "./components/TechStack/Techstack";
 import Skills from "./components/Skills/Skills";
 import scroll from "../src/assets/scroll-up.png";
-import { useState } from "react";
 import Slider from "./components/Slider/Slider";
-import Experience from "./components/Experience/Experience";
+import About from "./components/About/About";
 import data from "./topData";
 function App() {
   const [scroller, setScroller] = useState(false);
@@ -51,7 +51,7 @@ function App() {
       <h3 id="tech" className="sectionHeader">
         Tech Stack
       </h3>
-      <Techstack level={8} name="Html5" />
+      <Techstack level={8} name="HTML5" />
       <Techstack level={7} name="CSS3 / SASS / SCSS" />
       <Techstack level={5} name="Bootstrap & Tailwind" />
       <Techstack level={7} name="Javascript (Vanilla)" />
@@ -67,13 +67,10 @@ function App() {
         Personal Skills and Abilities
       </h3>
       <Skills />
-      <h3 id="experience" className="sectionHeader">
-        Experience
-      </h3>
-      <Experience />
       <h3 id="about" className="sectionHeader">
         About Me
       </h3>
+      <About />
       {scroller ? (
         <img
           onClick={scrollToTop}

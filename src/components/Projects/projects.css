@@ -15,7 +15,7 @@
 .projectIMG {
   width: 280px;
   height: 180px;
-  object-fit:cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 .projectInner {
@@ -45,7 +45,7 @@
 }
 .projectName {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 88.5%;
   color: #ffffff;
   text-transform: uppercase;
@@ -55,11 +55,11 @@
 .projectDSC {
   height: 120px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
   color: #ffffff;
   overflow: hidden;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
 .viewCodeBTN {
   background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
@@ -72,6 +72,9 @@
   margin-top: 20px;
   cursor: pointer;
   border-width: 0px;
+}
+.viewCodeBTN:hover {
+  color: #0f1624;
 }
 .buttonCont {
   display: flex;

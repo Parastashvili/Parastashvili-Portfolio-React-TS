@@ -28,9 +28,6 @@ export default function Header() {
         <a className="route" href="#skills">
           Skills
         </a>
-        <a className="route" href="#experience">
-          Experience
-        </a>
         <a className="route" href="#about">
           About Me
         </a>

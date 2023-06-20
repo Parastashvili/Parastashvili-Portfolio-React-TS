@@ -1,0 +1,43 @@
+.years {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.contInner {
+  display: flex;
+  gap: 180px;
+  border-bottom: 5px solid #ffffff;
+}
+.contInnerSecond {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.story {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  max-width: 200px;
+  line-height: 28px;
+}
+.experienceCont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.outerDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.circle {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  border-radius: 50%;
+}

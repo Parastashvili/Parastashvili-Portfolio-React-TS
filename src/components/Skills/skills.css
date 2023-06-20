@@ -1,7 +1,10 @@
+.skillContOuter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .skillsCont {
   padding: 0px 50px;
-  margin: 0px 100px;
-  margin-bottom: 20px;
 }
 .skillText {
   font-weight: 600;
@@ -9,12 +12,13 @@
   line-height: 24px;
   color: #ffffff;
   text-align: left;
+  letter-spacing: 1.3px;
 }
 .skillInner {
   display: grid;
   grid-template-columns: auto auto auto;
   row-gap: 40px;
-  column-gap: 30px;
+  column-gap: 150px;
 }
 .skillInner {
   list-style: none;
