@@ -2,13 +2,13 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
-import defaultProject from "./assets/defaultProject.png";
 import Techstack from "./components/TechStack/Techstack";
 import Skills from "./components/Skills/Skills";
 import scroll from "../src/assets/scroll-up.png";
 import { useState } from "react";
-import Slider from "./Slider";
+import Slider from "./components/Slider/Slider";
 import Experience from "./components/Experience/Experience";
+import data from "./topData";
 function App() {
   const [scroller, setScroller] = useState(false);
   const handleScroll = () => {
@@ -33,41 +33,16 @@ function App() {
         Latest Projects
       </h3>
       <div className="projectsContainer">
-        <Projects
-          projectName="hello"
-          projectIMG={defaultProject}
-          projectDSC="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          projectLink="github.com"
-        />
-        <Projects
-          projectName="hello"
-          projectIMG={defaultProject}
-          projectDSC="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          projectLink="github.com"
-        />
-        <Projects
-          projectName="hello"
-          projectIMG={defaultProject}
-          projectDSC="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          projectLink="github.com"
-        />
-        <Projects
-          projectName="hello"
-          projectIMG={defaultProject}
-          projectDSC="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          projectLink="github.com"
-        />
-        <Projects
-          projectName="hello"
-          projectIMG={defaultProject}
-          projectDSC="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <Projects
-          projectName="hello"
-          projectIMG={defaultProject}
-          projectDSC="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          projectLink="github.com"
-        />
+        {data.map((item) => (
+          <Projects
+            key={item.id}
+            projectName={item.name}
+            projectIMG={item.img}
+            projectDSC={item.text}
+            projectLink={item.githubLink}
+            liveLink={item.liveLink}
+          />
+        ))}
       </div>
       <h3 className="sectionHeader">All Projects</h3>
       <div className="sliderCont">

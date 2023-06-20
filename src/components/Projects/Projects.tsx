@@ -14,7 +14,7 @@ export default function Projects(props: any) {
           <a href={props.projectLink} target="_blank">
             <button className="viewCodeBTN">Code</button>
           </a>
-          <a href={props.projectLink} target="_blank">
+          <a href={props.liveLink} target="_blank">
             <button className="viewCodeBTN">Live Site</button>
           </a>
         </div>

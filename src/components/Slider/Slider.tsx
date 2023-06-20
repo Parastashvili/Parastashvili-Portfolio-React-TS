@@ -1,4 +1,4 @@
-import data from "./data.js";
+import data from "../../data.js";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/sea-green";
 import "./slider.css";
@@ -12,13 +12,17 @@ function Slider() {
           options={{
             autoHeight: true,
             autoWidth: true,
-            type: "loop",
             perPage: 3,
-            autoplay: false,
+            autoplay: true,
             padding: "5rem",
             fixedWidth: "300px",
             focus: "center",
             isNavigation: true,
+            type: "loop",
+            drag: "free",
+            autoScroll: {
+              speed: 22,
+            },
           }}
         >
           {data.map((item) => (

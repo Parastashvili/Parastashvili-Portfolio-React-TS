@@ -56,7 +56,7 @@ export default function Hero() {
             </p>
             <a
               target="_blank"
-              href="https://doc-14-3c-prod-00-apps-viewer.googleusercontent.com/viewer2/prod-00/pdf/rbn120bqsodec9c8eau1e97ur3kj2f6e/t840p6jjjfnvk5t8kgj2gbjve69okbv5/1687100700000/3/109807439512094463550/APznzaYRa71qPPFLHCIYi5tsEXEzxUFrR2ZKiHytZo07hhvrPYZuuf1krZcz85j5duylx3PmT-_Ax2ITFsVwbCALbGywL4fTcfLH5FRk3dGj8KPjBew_Ukvp1acoG7DmsQRTerbhXXfCeBNUkQZ9p5-ppsJkJTgZFfqvDZJJORAeK06u-Wt6U2AAuHAlyKlI1kDC5-f9o29FsQOOA3EHVHfbpbQE7psGInWi9MPVbTv1s2F1AgUlyPG8cpo_tp0etrfczgfyrFw_Z1PNeA0uSvbXkUH-NSlIyuT4ppPTN0etMbFqBX4VhvxhXAme4OyJyCc4Rpv8pvSj_OXtGuBZ8m2-sKX3G3bducxKnUc278c29LNxsuSmNLBoUoPyTMX_YluZ5ZUfOPqh_di2B6T-isZBhLFoCyuKgQ==?authuser=2&nonce=u5gmnrem1asrs&user=109807439512094463550&hash=jkqi6csn0jtb4jgjm726lav5jgvge29g"
+              href="https://drive.google.com/file/d/1jtirsBYt9rUPGcdlvG2-Fx-TMvKfL_s0/view?usp=drive_link"
             >
               <button className="heroText connectBTN">
                 Let's make great things together! 🤝🌟

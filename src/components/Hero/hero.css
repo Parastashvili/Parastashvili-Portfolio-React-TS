@@ -61,7 +61,9 @@
 .avatar {
   width: 100%;
   transition: 0.7s ease-in-out;
+  filter: drop-shadow(20px 10px 22px #13adc7);
 }
+
 .avatar:hover {
   transform: translate(20px, -10px) scale(1.05);
 }
